@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Apps</title>
+    </head>
+    <body>
+        <div class="head-area">
+            <br>
+            <h1 id="titlebar">Olive OS S App Store</h1>
+            <br>
+        </div>
+        <div class="pagearea">
+            <img src="debug.png" width="300" height="300" id="imageok">
+            <h1 id="tester">Wikipedia</h1>
+            <br>
+            <button id="getitem" onclick="startAppInstallation()">Get</button>
+        </div>
+        <p id="cmdline">https://www.dropbox.com/s/urrwzzyh8faq8uw/wikipedia.html?dl=1</p>
+        <p id="name">Wikipedia</p>
+        <p id="startnow">0</p>
+        <style>
+            .head-area {
+                background-color: gray;
+                text-align: center;
+            }
+            #titlebar {
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                text-align: center;
+                font-size: xx-large;
+                color: white;
+            }
+            #tester {
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-size: x-large;
+                text-align: center;
+            }
+            #getitem {
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-size: x-large;
+                border: none;
+                text-align: center;
+                align-items: center;
+                margin: auto;
+            }
+            body {
+                text-align: center;
+            }
+            #cmdline {
+                color: white;
+            }
+            #name {
+                color: white;
+            }
+            #startnow {
+                color: white;
+            }
+            #imageok {
+                border: green;
+            }
+            #iconpath {
+                color: white;
+            }
+        </style>
+        <script>
+            function startAppInstallation() {
+                var f = document.getElementById('startnow').innerHTML = "1";
+            }
+        </script>
+    </body>
+</html>
