@@ -1,82 +1,76 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>OliveWeb Store</title>
+        <title>Olive OS S App Store</title>
     </head>
-    <body>
-        <div style="background-color: green;">
-            <h1 style="color: white; text-align: center; font-family: Arial, Helvetica, sans-serif; font-weight: bold;">The app store servers are up and working again!</h1>
+    <body onload="divmanage()">
+        <div class="top">
+            <h1 id="label1">Olive OS S App Store</h1>
+            <img src="menu.png" height="50" width="50" onclick="divmanage()">
         </div>
-        <div class="header-area">
-            <br>
-            <h1 id="mytext">Olive OS S App Store</h1>
-            <br>
-            <br>
-            <br>
-            <br>
+        <div class="side" id="side">
+            <button id="b1" onclick="window.location.replace('index.html')">Store Home</button>
+            <button id="b2" onclick="window.location.replace('mailto:olivewebsoftware@gmail.com?subject=Submit App To App Store')">Submit To App Store</button>
         </div>
-        <div class='storepage'>
-            <h1 id="fea">Featured Apps:</h1>
-            <br>
-            <a id="link1" href="page2.html">Facebook</a>
-             <br>
-             <a id="link1" href="page6.html">Amazon</a>
-             <br>
-             <a id="link1" href="page10.html">Google</a>
-             <br>
-             <a id="link1" href="page5.html">Ebay</a>
-            <br>
-              <a id="link1" href="page7.html">Yahoo!</a>
-            <br>
-            <a id="link1" href="page3.html">Netflix</a>
-            <br>
-             <a id="link1" href="page11.html">Wikipedia</a>
-            <br>
-             <h1 id="fea">Featured Games:</h1>
-             <br>
-            <a id="link1" href="page4.html">Solitare</a>
-            <br>
-            <a id="link1" href="page8.html">Coolmath Games</a>
-            <br>
-             <a id="link1" href="page9.html">Cookie Clicker</a>
-            <br>
-             <h1 id="fea">Debug & Developer Apps:</h1>
-            <br>
-            <a id="link1" href="page13.html">OliveWeb Online Code Editor</a>
-            <br>
+        <div class="storeinfo">
+            <p>Store Information:</p>
+            <p>Store home page updated! <br>
+            Nothing else new.</p>
         </div>
+        <div class="store">
+            <h1 id="label2">Featured Apps:</h1>
+            <div class="featured">
+                <img src="1.png" width="50" height="50" onclick="window.location.replace('page2.html')">
+                <img src="2.png" width="50" height="50" onclick="window.location.replace('page6.html')">
+                <img src="3.png" width="50" height="50" onclick="window.location.replace('page10.html')">
+                <img src="4.png" width="50" height="50" onclick="window.location.replace('page5.html')">
+                <img src="5.png" width="50" height="50" onclick="window.location.replace('page7.html')">
+                <img src="6.png" width="50" height="50" onclick="window.location.replace('page3.html')">
+                <img src="7.png" width="50" height="50" onclick="window.location.replace('page11.html')">
+            </div>
+            <h1 id="label3">Featured Games:</h1>
+            <div class="featuredgames">
+                <img src="8.png" width="50" height="50" onclick="window.location.replace('page4.html')">
+                <img src="9.png" width="50" height="50" onclick="window.location.replace('page8.html')">
+                <img src="10.png" width="50" height="50" onclick="window.location.replace('page9.html')">
+            </div>
+            <h1 id="label4">Debug & Developer Apps:</h1>
+            <div class="debuganddeveloperapps">
+                <img src="code.png" width="50" height="50" onclick="window.location.replace('page13.html')">
+            </div>
+        </div>
+        <script>
+            function divmanage() {
+                var x = document.getElementById("side");
+                if (x.style.display === "none") {
+                x.style.display = "block";
+                } else {
+                x.style.display = "none";
+                } 
+            }
+        </script>
         <style>
-            .storepage {
-                text-align: center;
+            #label1 {
+                font-family: Arial, Helvetica, sans-serif;
             }
-            .header-area {
-                text-align: center;
-                background-color: gray;
+            #label2 {
+                font-family: Arial, Helvetica, sans-serif;
             }
-            #mytext {
-                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-                font-size: xx-large;
-                color: white;
+            #label3 {
+                font-family: Arial, Helvetica, sans-serif;
             }
-            #go {
-                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-                font-size: x-large;
+            #label4 {
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            #b1 {
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: large;
                 border: none;
-                cursor: pointer;
-                padding: 10px 30px;
             }
-            #appsearch {
-                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-                font-size: x-large;
-                padding: 10px 30px;
-            }
-            #fea {
-                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-                font-size: xx-large;
-            }
-            #link1 {
-                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-                font-size: x-large;
+            #b2 {
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: large;
+                border: none;
             }
         </style>
     </body>
